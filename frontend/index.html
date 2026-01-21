@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <title>MeeTech - People Counting Dashboard</title>
+    <script type="text/javascript">
+      (function() {
+        if (window.location.pathname !== '/' && !window.location.pathname.includes('.')) {
+          var segments = window.location.pathname.split('/').filter(Boolean);
+          if (segments.length > 0) {
+            var newPath = '/?/' + segments.join('/');
+            window.history.replaceState(null, null, newPath);
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
